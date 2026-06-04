@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineLog — Filmes Assistidos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <section id="secao-login">
+
+        <div class="login-decor" aria-hidden="true">
+            <div class="decor-text">CINEMA</div>
+            <div class="decor-year">2026</div>
+        </div>
+
+        <div class="login-card">
+            <div class="login-logo">
+                <span class="logo-icon">🎬</span>
+                <h1 class="logo-titulo">CineLog</h1>
+                <p class="logo-subtitulo">Sua lista de filmes assistidos</p>
+            </div>
+
+            <div class="formulario-login">
+                <div class="campo-grupo">
+                    <label for="input-usuario" class="campo-label">Usuário</label>
+                    <input type="text" id="input-usuario" class="campo-input" placeholder="Digite seu utilizador"
+                        autocomplete="username" />
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="input-senha" class="campo-label">Palavra-passe</label>
+                    <input type="password" id="input-senha" class="campo-input" placeholder="Digite sua palavra-passe"
+                        autocomplete="current-password" />
+                </div>
+
+                <div id="mensagem-erro-login" class="mensagem-erro" role="alert" aria-live="polite"></div>
+
+                <button id="btn-login" class="btn-primario btn-bloco">
+                    <span>Entrar</span>
+                    <svg class="btn-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+                <p class="login-dica">
+                    <span>Dica:</span> Usuário <code>aluno</code> · senha <code>fiap2025</code>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="secao-crud" class="oculto">
+
+        <header class="app-header">
+            <div class="header-marca">
+                <span class="logo-icon-sm">🎬</span>
+                <span class="header-titulo">CineLog</span>
+            </div>
+            <div class="header-acoes">
+                <span id="header-usuario" class="header-usuario"></span>
+                <button id="btn-logout" class="btn-logout" title="Sair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg>
+                    Sair
+                </button>
+            </div>
+        </header>
+
+        <main class="app-main">
+
+            <div class="painel-adicionar">
+                <h2 class="painel-titulo">Adicionar Filme</h2>
+
+                <div class="adicionar-controles">
+                    <div class="campo-grupo campo-flex">
+                        <label for="input-filme" class="campo-label campo-label-sm">Nome do Filme</label>
+                        <input type="text" id="input-filme" class="campo-input" placeholder="Ex: Interestelar (2014)" />
+                    </div>
+
+                    <div class="botoes-adicionar">
+                        <button id="btn-adicionar-fim" class="btn-secundario" title="Adicionar ao final da lista">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
+                                height="16">
+                                <path d="M12 5v14M5 12l7 7 7-7" />
+                            </svg>
+                            Ao Final
+                        </button>
+                        <button id="btn-adicionar-inicio" class="btn-acento" title="Adicionar ao início da lista">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
+                                height="16">
+                                <path d="M12 19V5M5 12l7-7 7 7" />
+                            </svg>
+                            Ao Início
+                        </button>
+                    </div>
+                </div>
+
+                <div id="mensagem-feedback" class="mensagem-feedback" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="painel-lista">
+                <div class="lista-header">
+                    <h2 class="painel-titulo">Minha lista</h2>
+                    <span id="contador-filmes" class="lista-contador">0 filmes</span>
+                </div>
+
+                <ul id="lista-filmes" class="lista-filmes" aria-label="Lista de filmes assistidos"></ul>
+
+                <div id="estado-vazio" class="estado-vazio oculto">
+                    <span class="estado-vazio-icone">🎞️</span>
+                    <p>Nenhum filme na lista ainda.</p>
+                    <p>Adicione seu primeiro filme acima!</p>
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
