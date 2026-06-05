@@ -11,7 +11,7 @@ Chat GPT: Ele entregou um site simple sem muitas caracteristicas mas ele seguiu 
 
 Gemini: Ele se mostro superior ao chat gpt conseguindo uma melhor separação de responsabilidades entre funções e fazer os códigos de html, css e js de uma forma clara onde apresentou com um modelo simples similar em estrutura ao do chatgtp.
 
-Claude: Ele se mostrou superiores aos outros ao montar um site utilizando a apgina inteira modificando o html e css para um estilo unico e a parte do js se mostrou eficaz mantendo as validações e requizitos obrigatorios e adicionou mais do que foi pedido como um botão que volta a tela de login.
+Claude: Ele se mostrou superiores aos outros ao montar um site utilizando a página inteira modificando o html e css para um estilo unico e a parte do js se mostrou eficaz mantendo as validações e requizitos obrigatorios e adicionou mais do que foi pedido como um botão que volta a tela de login.
 
 # 4. justificativa da ia escolhida:
-O modelo Claude foi escolhido, poia como base inicial para a estruturação lógica do JavaScript devido à sua alta precisão em seguir restrições de sintaxe rígidas e específicas de programação a arquitetura exigida pelo projeto demandava uma separação estrita de responsabilidades e demonstrou forte aderência as diretrizes aplicadas, e gerou código limpo e organizado.
+O modelo Claude foi escolhido, pois como base inicial para a estruturação lógica do JavaScript devido à sua alta precisão em seguir restrições de sintaxe rígidas e específicas de programação a arquitetura exigida pelo projeto demandava uma separação estrita de responsabilidades e demonstrou forte aderência as diretrizes aplicadas, e gerou código limpo e organizado.
